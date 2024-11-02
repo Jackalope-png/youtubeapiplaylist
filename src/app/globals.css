@@ -1,0 +1,58 @@
+.playlist-container {
+  max-width: 1200px; /* Adjust the max width of the container */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.song-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.song-item {
+  display: flex; 
+  flex-direction: column; /* Stack image and title vertically */
+  align-items: center; /* Center align items within each song-item */
+  width: calc(10% - 30px); /* Adjust width to fit 10 items with extra margin */
+  margin: 0 15px 30px; /* Adjust horizontal and vertical margin for more space */
+}
+
+.song-thumbnail {
+  max-width: 100%; /* Maintain responsive thumbnails */
+  height: auto; /* Preserve aspect ratio */
+  border-radius: 8px; /* Optional: add border radius */
+}
+
+.song-title {
+  margin-top: 8px; /* Space between image and title */
+  text-align: center; /* Centered text under the image */
+}
+.search-container {
+  margin: 20px 0; /* Add some margin above and below the search input */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Increase font size for better readability */
+}
+.load-more-button {
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Increase font size for better usability */
+}
+
+.load-more-button:hover {
+  background-color: #0056b3;
+}
